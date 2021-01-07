@@ -1,0 +1,26 @@
+{% extends "blog_ap/base.html" %}
+
+{% block main %}
+<form action='dataSaver' method='POST'>
+                  {% csrf_token %}
+    <label for="GetName">Name: </label>
+    <input id="GetName" type="text" name="Name">
+
+    <label for="GetAge">Age: </label>
+    <input id="GetAge" type="number" name="Age">
+    <br>
+    <br>
+    <br>
+
+    <label for="GetEmail1">Email1 </label>
+    <input id="GetEmail1" type="email" name="Age">
+
+    <label for="GetEmail2">Email2 </label>
+    <input id="GetEmail2" type="email" name="Age">
+<br>
+<br>
+    <input type="submit" value="SUBMIT">
+</form>
+
+
+{% endblock %}

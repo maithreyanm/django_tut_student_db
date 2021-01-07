@@ -1,0 +1,11 @@
+{% extends "blog_ap/base.html" %}
+
+{% block main %}
+
+<form action='dataLoader' method='POST'>
+                  {% csrf_token %}
+    <label for="GetData">Id number: </label>
+    <input id="GetData" type="number" name="id">
+    <input type="submit" value="SUBMIT">
+</form>
+{% endblock %}

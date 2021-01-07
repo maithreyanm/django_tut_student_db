@@ -1,0 +1,11 @@
+{% extends "blog_ap/base.html" %}
+
+{% block main %}
+
+{% if datass.name != null %}
+<h1>Name : {{ datass.name }}</h1>
+<h2>Age : {{ datass.age }}</h2>
+{% else %}
+<p>{{ datass }}</p>
+{% endif %}
+{% endblock %}
