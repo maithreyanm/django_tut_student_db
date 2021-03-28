@@ -1,5 +1,5 @@
 from django.db import models
-from djangotut.settings import engine
+from blog_ap.sql import session
 # Create your models here.
 from django.utils import timezone
 from sqlalchemy.orm import declarative_base, Session
@@ -7,8 +7,6 @@ from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
-
-session = Session()
 
 class Person():
     __tablename__ = 'Person'

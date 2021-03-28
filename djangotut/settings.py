@@ -87,7 +87,7 @@ DATABASES = {
     }
 }
 
-engine = create_engine("mysql://root:password@localhost/sample",echo = True)
+db_uri = "mysql://root:password@localhost/sample"
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
