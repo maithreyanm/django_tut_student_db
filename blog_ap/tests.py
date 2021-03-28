@@ -13,4 +13,4 @@ class UserTests(unittest.TestCase):
         request = {'POST':{'name':'maithreyan', 'age':25, 'email_1':'maithreyan@gmail.cpm',
                            'email_2':'reyan@gmail.com'}}
         from blog_ap.services import DataSync
-        response = DataSync.save_data(request)
+        DataSync.save_data()

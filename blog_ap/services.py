@@ -21,19 +21,19 @@ class DataSync:
             return render(request=request, template_name="blog_ap/get_student_display.html", context=context)
 
     @classmethod
-    def save_data(cls, request):
+    def save_data(cls):
         try:
-            name = request.POST.get('Name')
-            age = request.POST.get('Age')
-            email_1 = request.POST.get('email_1')
-            email_2 = request.POST.get('email_2')
+            # name = request.POST.get('Name')
+            # age = request.POST.get('Age')
+            # email_1 = request.POST.get('email_1')
+            # email_2 = request.POST.get('email_2')
             pers = Person()
-            pers.name = name
-            pers.age = age
-            pers.email_1 = email_1
-            pers.email_2 = email_2
+            pers.name = 'maithreyan'
+            pers.age =25
             pers.save()
-            return render(request, template_name="blog_ap/save_student.html")
+
+            # return render(request, template_name="blog_ap/save_student.html")
 
         except Exception as e:
-            return render(request, template_name="blog_ap/save_student.html")
+            # return render(request, template_name="blog_ap/save_student.html")
+            print('e')
