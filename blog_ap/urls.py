@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from users.views import register
+from blog_ap.views import register
 
 urlpatterns = [
     path('', views.home, name = 'blog_ap-home'), # testing

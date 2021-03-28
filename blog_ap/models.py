@@ -5,10 +5,13 @@ from django.utils import timezone
 
 
 class Person(models.Model):
+    objects = None
     name = models.CharField(max_length=20)
     age = models.IntegerField()
     created_on = models.DateTimeField(default=timezone.now)
     updated_on = models.DateTimeField(default=timezone.now)
+
+
 
 
 

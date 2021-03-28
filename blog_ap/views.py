@@ -1,3 +1,4 @@
+from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -22,3 +23,8 @@ def save_data(request):
 
 def get_stud_data(request):
     return render(request, template_name="blog_ap/get_student.html")
+
+
+def register(request):
+    form = UserCreationForm()
+    return render(request=request, template_name='users/users_reg.html', context={'form': form})

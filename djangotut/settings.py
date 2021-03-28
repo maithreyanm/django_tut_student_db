@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog_ap',
-    'users',
     # 'blog_ap.apps.AppConfig',
     # 'users.apps.UsersConfig',
     'django.contrib.admin',
@@ -81,7 +80,7 @@ WSGI_APPLICATION = 'djangotut.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djagoo',
+        'NAME': 'sample',
         'USER': 'root',
         'PASSWORD': 'password',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
